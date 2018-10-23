@@ -22,8 +22,8 @@ function fish_prompt
   end
 
   # Show python virtualenv name (if activated)
-  if test -n "$VIRTUAL_ENV"
-    set prompt $prompt $pure_color_gray(basename "$VIRTUAL_ENV")"$pure_color_normal "
+  if test -n "$PYENV_ENV"
+    set prompt $prompt $pure_color_gray(basename "$PYENV_ENV")"$pure_color_normal "
   end
 
   # vi-mode indicator
